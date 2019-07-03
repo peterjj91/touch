@@ -6109,8 +6109,6 @@ textarea.form-control {
     margin-bottom: 30px; }
 .attend__img img {
       width: 100%; }
-.attend__description .form-control {
-    min-width: 270px; }
 .attend__up {
     text-transform: uppercase;
     margin-bottom: 11px;
@@ -7888,6 +7886,8 @@ textarea.form-control {
               flex: 0 0 58.33333%;
       max-width: 58.33333%;
       padding: 0px 15px; }
+    .attend__description .form-control {
+      min-width: 270px; }
       .attend__up {
         margin-top: -10px; }
       .attend__email {
