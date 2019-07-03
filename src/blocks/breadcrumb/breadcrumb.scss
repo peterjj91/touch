@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока breadcrumb, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.breadcrumb {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  @include media-breakpoint-up(md) {}
+
+  li {
+    a {}
+  }
+
+  &-item {
+    &.active {}
+  }
+
+  &-item + &-item {
+    &:before {}
+  }
+}

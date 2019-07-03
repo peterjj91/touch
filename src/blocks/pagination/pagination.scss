@@ -1,0 +1,20 @@
+// В этом файле должны быть стили для БЭМ-блока pagination, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pagination {
+
+  $block-name: &; // #{$block-name}__element {}
+
+  .page-item {
+    &.active {
+      .page-link {
+        &:hover, &:focus {}
+      }
+    }
+  }
+  
+  .page-link {
+    &:hover, &:focus {}
+  }
+}

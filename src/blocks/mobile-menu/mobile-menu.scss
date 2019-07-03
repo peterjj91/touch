@@ -1,0 +1,111 @@
+// В этом файле должны быть стили для БЭМ-блока mobile-menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mobile-menu {
+
+  $block-name: &; // #{$block-name}__element {}
+  @include make-row;
+  color: white;
+
+  &__col {
+    padding-left: 15px;
+    padding-right: 30px;
+
+    @media(min-width: $screen-sm) {
+      @include make-col(6);
+    }
+    @media(min-width: $screen-md) {
+      @include make-col(4);
+    }
+    @media(min-width: $screen-xl) {
+      @include make-col(3);
+    }
+  }
+
+  &__block {
+    margin-bottom: 62px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold !important;
+  }
+
+  a {
+    color : white;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  &__ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 13px;
+
+    li {
+      width: 100%;
+      margin-bottom: 9px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__news {
+    display: flex;
+    padding-bottom: 21px;
+    position: relative;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80%;
+      height: 1px;
+      background-color: white;
+    }
+
+    &__img {
+      flex: 0 0 90px;
+    }
+
+    &__description {
+      width: 100%;
+      padding: 0px 0px 0px 11px;
+    }
+
+    &__date {
+      color: rgba(255, 255, 255, 0.3);
+      margin-top: 8px;
+      font-size: 12px;
+    }
+  }
+
+  &__more {
+    float: right;
+    font-size: 13px;
+    margin-top: 20px;
+
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: underline;
+      
+    }
+  }
+}

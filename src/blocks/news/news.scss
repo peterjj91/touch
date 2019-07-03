@@ -1,0 +1,112 @@
+// В этом файле должны быть стили для БЭМ-блока news, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &__row {
+    @media(min-width: 1200px) {
+      @include make-row;
+      margin: 0px -15px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 33px;
+
+    @media(min-width: 1200px) {
+      @include make-col(6);
+      padding: 0px 15px;
+    }
+  }
+
+  &__item {
+    background-color: white;
+
+    @media(min-width: 700px) {
+      display: flex;
+      height: 233px;
+    }
+
+    &:hover {
+      box-shadow: 17px 0px 51px rgba(0, 0, 0, 0.2);
+    }
+
+    &__img {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 250px;
+
+      @media(min-width: 700px) {
+        flex: 0 0 257px;
+        width: 257px;
+        height: auto;
+      }
+      
+      img {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        max-width: none;
+      }
+    }
+    &__description {
+      padding: 25px 20px 60px 21px;
+      position: relative;
+
+      @media(min-width: 700px) {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      color: black;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      &:hover, &:focus {
+        color: black;
+      }
+    }
+
+    &__date {
+      font-size: 12px;
+      color: #a1a1a1;
+      margin-bottom: 11px;
+    }
+
+    &__text {
+      overflow: hidden;
+      max-height: 65px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 21px;
+    }
+
+    &__more {
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      color: black;
+      position: absolute;
+      bottom: 25px;
+      left: 21px;
+      
+      &:hover, &:focus {
+        color: black;
+      }
+    }
+  }
+}

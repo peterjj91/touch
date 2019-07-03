@@ -1,0 +1,54 @@
+// В этом файле должны быть стили для БЭМ-блока we, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.we {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  
+  @media(min-width: $screen-md) {
+    @include make-row;
+    margin: 0px -10px;
+  }
+  @media(min-width: 1100px) {
+    margin: 0px -15px;
+  }
+
+  &__block {
+    
+    margin-bottom: 30px;
+    
+    @media(min-width: $screen-md) {
+      @include make-col(6);
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media(min-width: 1100px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__item {
+    padding-left: 32px;
+    position: relative;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border-radius: 50%;
+      border: 4px solid #1e62ec;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,41 @@
+
+.multiple-items {
+  .slick-slide {
+    padding: 0px 15px;
+  }
+  img {
+    width: 100%;
+  }
+  .slick-dots {
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    @media(min-width: $screen-xxl) {
+      margin-top: 70px;
+    }
+
+    li {
+      margin: 0px 7px;
+
+      button {
+        font-size: 0;
+        border: none;
+        background-color: #d7d7d7;
+        outline: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        padding: 0;
+      }
+      &.slick-active {
+        button {
+          background-color: #1e62ec;
+        }
+      }
+    }
+  }
+}

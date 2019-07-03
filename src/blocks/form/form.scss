@@ -1,0 +1,80 @@
+// В этом файле должны быть стили для БЭМ-блока form, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.form {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &-control {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0px;
+    color: white;
+    font-size: 12px;
+    padding: 8px 14px 7px 14px;
+    height: auto;
+
+    &::-webkit-input-placeholder { /* Edge */
+      color: white;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: white;
+    }
+
+    &::placeholder {
+      color: white;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: white;
+      outline: none;
+      box-shadow: none;
+      border-color: white;
+    }
+
+    &-simple {
+      border-color: #d1d1d1;
+      color: black;
+
+      &::-webkit-input-placeholder { /* Edge */
+        color: black;
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: black;
+      }
+
+      &::placeholder {
+        color: black;
+      }
+
+      &:focus {
+        color: black;
+        box-shadow: none;
+        border-color: #d1d1d1;
+      }
+    }
+  }
+
+  &-group {
+    margin-bottom: 13px;
+    @include media-breakpoint-up(sm) {}
+
+    &:last-child {}
+
+    label {}
+  }
+
+  &-mini {
+    @include media-breakpoint-up(sm) {}
+  }
+}
+
+textarea.form-control {
+  resize: none;
+
+  &:focus {}
+}

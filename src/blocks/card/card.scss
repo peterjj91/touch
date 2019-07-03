@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока cards, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.card {
+
+  $block-name: &; // #{$block-name}__element {}
+
+  &:hover {}
+  
+  &-body {
+    @include media-breakpoint-up(md) {}
+  }
+
+  &-subtitle {
+    @include media-breakpoint-up(md) {}
+  }
+
+  &-text {
+    @include media-breakpoint-up(md) {}
+  }
+}

@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока select, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.bootstrap-select {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  & > .dropdown-toggle {
+    &:after {}
+    &:focus {}
+    &:hover {}
+  }
+
+  .dropdown-menu {
+    li {
+      a {
+        &:hover, &:focus {}
+        span.text {}
+      }
+
+      &.active {
+        a {
+          span.text {}
+        }
+      }
+    }
+  }
+
+  &.show {
+    & > .btn-light.dropdown-toggle {}
+  }
+}

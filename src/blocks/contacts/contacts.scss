@@ -1,0 +1,104 @@
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &__item {
+    
+    padding: 20px 20px;
+    background-color: white;
+
+    @media(min-width: 1100px) {
+      display: flex;
+    }
+
+    &__map {
+      // flex: 0 0 548px;
+      margin-bottom: 30px;
+
+      @media(min-width: 1100px) {
+        @include make-col(5.8);
+        margin-bottom: 0;
+      }
+
+      &__description {
+        font-weight: bold;
+        font-size: 13px;
+        padding: 20px 17px 20px 17px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.06), 5px 0px 5px rgba(0, 0, 0, 0.06), -5px 0px 5px rgba(0, 0, 0, 0.06);
+        text-transform: uppercase;
+
+        @media(min-width: 1100px) {
+        }
+
+        .icon {
+          vertical-align: bottom;
+          margin-right: 17px;
+        }
+      }
+    }
+
+    &__description {
+      width: 100%;
+      // padding: 0px 0px 0px 23px;
+      font-size: 14px;
+
+      @media(min-width: 1100px) {
+        padding-left: 23px;
+      }
+
+      .row {
+        // margin-bottom: 38px;
+      }
+
+      &__block {
+        margin-bottom: 38px;
+
+        &:last-child {
+          // margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+
+      &.title {
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+    }
+
+    a {
+      color: #1e62ec;
+      text-decoration: underline;
+    }
+  }
+
+  &__map {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 56.25%;
+    }
+
+    iframe, .iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    white-space: nowrap;
+  }
+}

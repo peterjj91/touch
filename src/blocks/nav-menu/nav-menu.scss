@@ -1,0 +1,129 @@
+// В этом файле должны быть стили для БЭМ-блока nav-menu, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.nav-menu {
+
+  $block-name: &; // #{$block-name}__element {}
+  display: none;
+  
+  z-index: -1;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  transform: translate(0%, -50%);
+  top: 50%;
+  left: 76px;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 3;
+
+  @media(min-width: 1100px) {
+    display: block;
+    
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  li {
+    margin-bottom: 11px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      a {
+        @extend .active;
+      }
+    }
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 29px;
+    letter-spacing: 0.3px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: normal;
+    padding-top: 15px;
+    padding-bottom: 13px;
+
+    &:hover, &:focus {
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -5px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid $color-ocean;
+      border-radius: 50%;
+      background-color: white;
+      transition: .5s ease-in-out;
+      transform: scale(0);
+    }
+
+    &.active {
+      color: #1e62ec;
+
+      &:hover, &:focus {
+        color: #1e62ec;
+      }
+
+      &:before {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &--light {
+    &:before {
+      background-color: rgba(255, 255, 255, 0.3)
+    }
+
+    li {
+      &.active {
+        a {
+          @extend .active;
+        }
+      }
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
+
+      &:hover, &:focus {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:before {
+        border-color: white;
+        background-color: #688ec1;
+      }
+
+      &.active {
+        color: rgba(255, 255, 255, 1);
+
+        &:hover, &:focus {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}

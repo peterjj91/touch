@@ -1,0 +1,79 @@
+// В этом файле должны быть стили для БЭМ-блока service, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.service {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &__row {
+    @media(min-width: 800px) {
+      @include make-row;
+      margin-left: -10px;
+      margin-right: -10px;
+      height: 488px;
+    }
+    @media(min-width: $screen-xxl) {
+      margin-left: -14px;
+      margin-right: -14px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 30px;
+    
+    @media(min-width: 800px) {
+      @include make-col(4);
+      padding: 0px 15px;
+      margin-bottom: 0;
+    }
+    @media(min-width: $screen-xxl) {
+      padding: 0px 14px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      @media(min-width: 800px) {
+      }
+    }
+  }
+
+  &__item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 20px;
+
+    @media(min-width: 700px) {
+      height: 488px;
+    }
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 75%;
+
+      @media(min-width: 700px) {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+
+  }
+
+  &__title {
+
+  }
+}
