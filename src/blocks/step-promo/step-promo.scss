@@ -1,0 +1,35 @@
+// В этом файле должны быть стили для БЭМ-блока step-promo, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.step-promo {
+
+  $block-name: &; // #{$block-name}__element {}
+  margin-bottom: 50px;
+
+  .card {
+    margin-bottom: -1px;
+  }
+}
+
+
+.literature {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 90px;
+  font-size: 14px;
+
+  a {
+    color: #1e62ec;
+    text-decoration: underline;
+  }
+
+  li {
+    margin-bottom: 25px;
+  }
+
+  img {
+    margin-right: 20px;
+  }
+}

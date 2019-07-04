@@ -68,4 +68,20 @@
       }
     }
   }
+
+  &--today {
+    #{$block-name} {
+      @include media-breakpoint-up(sm) {}
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-up(lg) {
+        @include make-col(4);
+      }
+      @include media-breakpoint-up(xl) {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
+  }
 }

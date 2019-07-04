@@ -16,7 +16,7 @@
   }
   @include media-breakpoint-up(xl) {
     padding-top: 53px;
-    padding-bottom: 101px;
+    padding-bottom: 53px;
   }
 
   &__inner {
@@ -35,10 +35,10 @@
     @include media-breakpoint-up(xl) {
     }
     @media(max-width: 1100px) {
-      padding-left: 0;
+      // padding-left: 0;
     }
     @media(max-width: $screen-xxl) {
-      padding-left: 300px;
+      // padding-left: 300px;
     }
   }
 

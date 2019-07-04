@@ -1,0 +1,124 @@
+// В этом файле должны быть стили для БЭМ-блока article, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.article {
+
+  $block-name: &; // #{$block-name}__element {}
+  
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+
+  &__block {
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    &--subTitle {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px !important;
+      margin-bottom: 21px !important;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    margin-bottom: 14px;
+    line-height: 23px;
+  }
+
+  &__image-group {
+    @include make-row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__img {
+      flex: 0 0 385px;
+      padding: 0px 15px;
+
+      img {
+        width: 100%;
+      }
+    }
+    &__description {
+      padding: 0px 15px;
+    }
+  }
+  
+  &__schema {
+    margin-top: 94px;
+    margin-bottom: 89px;
+
+    &__title {
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+    &__header {
+      // height: 200px;
+      padding-top: 59px;
+      position: relative;
+      text-align: center;
+      // padding-bottom: 34px;
+      
+      &:before {
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background-image: url(../img/article-img1.png);
+        width: 298px;
+        height: 149px;
+        z-index: -1;
+      }
+
+      .btn {
+        width: 212px;
+        padding-top: 23px;
+        padding-bottom: 21px;
+      }
+    }
+
+    &__body {
+      @media(max-width: $screen-sm) {
+        display: none;
+        
+      }
+    }
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__service {
+    margin-top: 42px;
+    padding-top: 61px;
+    background-color: #f3f6fa;
+    padding-bottom: 77px;
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 53px;
+      text-transform: uppercase;
+    }
+
+    &__subTitle {
+      color: #1e62ec;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    &__more {
+      text-align: center;
+      margin-top: 51px;
+
+    }
+  }
+  
+}

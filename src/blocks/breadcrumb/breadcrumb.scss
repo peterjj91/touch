@@ -5,18 +5,30 @@
 .breadcrumb {
 
   $block-name: &; // #{$block-name}__element {}
+  padding: 0;
+  background-color: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
   
   @include media-breakpoint-up(md) {}
 
   li {
-    a {}
+    a {
+      text-decoration: underline;
+      color: black;
+    }
   }
 
   &-item {
-    &.active {}
+    &.active {
+      color: #1e62ec;
+    }
   }
 
   &-item + &-item {
-    &:before {}
+    &:before {
+      content: "—";
+    }
   }
 }

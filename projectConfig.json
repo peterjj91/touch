@@ -42,7 +42,11 @@
     "block-promo": [],
     "checkbox": [],
     "social": [],
-    "mobile-menu": []
+    "mobile-menu": [],
+    "article": [],
+    "card-promo": [],
+    "step-promo": [],
+    "ad-promo": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
