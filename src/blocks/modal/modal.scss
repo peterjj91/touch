@@ -2,6 +2,7 @@
 .modal {
 
   $block-name: &; // #{$block-name}__element {}
+  background-color: rgba(0, 0, 0, 0.82);
   
   &-backdrop {
 
@@ -49,10 +50,13 @@
     height: 100%;
   }
 
+  &-backdrop {
+    background-color: transparent;
+  }
+
   &-full {
     min-width: 100%;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.82);
 
     &:before {
       // content: "";
@@ -103,18 +107,11 @@
       &-body {
         display: flex;
         align-items: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 0;
         padding-right: 0;
       }
-      &-backdrop.show {
-        opacity: 1;
-      }
-    }
-
-    & + .modal-backdrop {
-      background-color: rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -206,14 +203,16 @@
   }
 
   &-open {
-    .fullpage-wrapper {
-      // -webkit-filter: blur(3px);
-      // -moz-filter: blur(3px);
-      // -ms-filter: blur(3px);
-      // -o-filter: blur(3px);    
+    // overflow: hidden !important;
+
+    .fullpage-wrapper, .page__inner {
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -ms-filter: blur(1px);
+      -o-filter: blur(1px);
       // filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='svgBlur' x='-5%' y='-5%' width='110%' height='110%'><feGaussianBlur in='SourceGraphic' stdDeviation='5'/></filter></svg>#svgBlur");
-      // filter: "progid: DXImageTransform.Microsoft.Blur(PixelRadius = '3')";
-      // filter: blur(3px);
+      filter: "progid: DXImageTransform.Microsoft.Blur(PixelRadius = '1')";
+      filter: blur(1px);
     }
   }
 }

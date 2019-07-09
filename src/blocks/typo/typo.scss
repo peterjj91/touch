@@ -37,7 +37,10 @@ p, .text {
 }
 
 a, .link {
-  &:hover, &:focus {}
+  
+  &:hover, &:focus {
+    text-decoration: none !important;
+  }
 }
 
 .text--uppercase {

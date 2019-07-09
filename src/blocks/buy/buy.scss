@@ -17,6 +17,7 @@
     color: #1e62ec;
     font-size: 36px;
     margin-bottom: 17px;
+    font-weight: 300;
   }
 
   &__block {
@@ -38,6 +39,18 @@
     }
     @include media-breakpoint-up(xl) {
       @include make-col(3);
+    }
+
+    &--quarter {
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+      @include media-breakpoint-up(lg) {
+        @include make-col(3);
+      }
+      @include media-breakpoint-up(xl) {
+        @include make-col(2.4);
+      }
     }
   }
 

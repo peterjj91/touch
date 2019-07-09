@@ -24,6 +24,16 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $('.multiple-items').on('wheel', (function(e) {
+    e.preventDefault();
+
+    if (e.originalEvent.deltaY < 0) {
+      $(this).slick('slickNext');
+    } else {
+      $(this).slick('slickPrev');
+    }
+  }));
 });
 
 $(document).ready(function() {
@@ -44,6 +54,53 @@ $(document).ready(function() {
     paddingTop: '0em',
     paddingBottom: '0px',
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+  });
+});
+
+$('.main-number').each(function () {
+   var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+   $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+   }, {
+      duration: 3000,
+      step: function (func) {
+         $(this).text(parseFloat(func).toFixed(size));
+      }
+   });
+});
+
+var a = 0;
+$(window).scroll(function() {
+  var oTop = $('.buy').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.stat-number').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+        });
+    });
+    a = 1;
+  }
+});
+
+$(document).ready(function(){
+  $('.article__service__more .card-more').click(function(){
+    $(".article__service__catalog").addClass("article__service__catalog--active");
+    $(".article__service__more").addClass("d-none")
   });
 });
 
