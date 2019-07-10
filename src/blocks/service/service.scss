@@ -48,6 +48,8 @@
     text-align: center;
     justify-content: center;
     padding: 20px 20px;
+    overflow: hidden;
+    position: relative;
 
     @media(min-width: 700px) {
       height: 488px;
@@ -67,10 +69,21 @@
         display: none;
       }
     }
+
+    &__img {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: none;
+      z-index: 0;
+    }
   }
 
   &__description {
-
+    z-index: 1;
   }
 
   &__title {

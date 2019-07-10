@@ -99,8 +99,15 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
   $('.article__service__more .card-more').click(function(){
-    $(".article__service__catalog").addClass("article__service__catalog--active");
+    $(".article__service__cards").addClass("article__service__cards--active");
     $(".article__service__more").addClass("d-none")
+  });
+});
+
+$(document).ready(function(){
+  $('.news__more .btn').click(function(){
+    $(".news__row").addClass("news__row--active");
+    $(".news__more").addClass("d-none")
   });
 });
 

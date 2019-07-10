@@ -12,7 +12,9 @@
   }
 
   &__block {
-    margin-bottom: 36px;
+    // margin-bottom: 36px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   &__text {
@@ -126,15 +128,18 @@
       margin-bottom: 24px;
     }
     &__catalog {
+
+    }
+    &__more {
+      text-align: center;
+      margin-top: 51px;
+    }
+
+    &__cards {
       & > * {
         display: none;
-
-        .active & {
-          display: block;
-          
-        }
         
-        &:nth-child(-n+4) {
+        &:nth-child(-n+3) {
           display: block;
         }
       }
@@ -143,10 +148,6 @@
           display: block;
         }
       }
-    }
-    &__more {
-      text-align: center;
-      margin-top: 51px;
     }
   }
   

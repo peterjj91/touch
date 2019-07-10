@@ -11,6 +11,20 @@
       @include make-row;
       margin: 0px -15px;
     }
+
+    & > * {
+      display: none;
+      
+      &:nth-child(-n+4) {
+        display: block;
+      }
+    }
+    
+    &--active {
+      & > * {
+        display: block;
+      }
+    }
   }
 
   &__block {
@@ -110,9 +124,17 @@
     }
   }
 
+  &__more {
+    margin-top: 37px;
+    text-align: center;
+
+    .btn {
+      text-transform: uppercase;
+    }
+  }
+
   &__bottom {
     margin-top: 7px;
     text-align: right;
-    
   }
 }
