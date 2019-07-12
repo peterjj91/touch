@@ -1,6 +1,6 @@
 .page-footer {
   $block-name: &;
-  padding: 30px 0px 190px 0px;
+  padding: 30px 0px 50px 0px;
   color: black;
 
   @include media-breakpoint-up(xs) {
@@ -15,7 +15,7 @@
   }
   @include media-breakpoint-up(xl) {
     padding-top: 53px;
-    padding-bottom: 190px;
+    padding-bottom: 50px;
   }
 
   &__inner {
@@ -144,6 +144,16 @@
     @media(min-width: $screen-md) {
       margin-top: 0;
       margin-left: 33px;
+    }
+  }
+
+  &__tel {
+    color: black !important;
+    text-decoration: none !important;
+
+    &:hover, &:focus {
+      color: black;
+      text-decoration: none;
     }
   }
 

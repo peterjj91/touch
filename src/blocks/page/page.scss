@@ -21,6 +21,14 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    &--ad {
+      padding-bottom: 140px;
+      
+      .page-footer {
+
+      }
+    }
   }
 
   &__content {

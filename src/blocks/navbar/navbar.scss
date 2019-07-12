@@ -20,6 +20,41 @@
     }
   }
 
+  &__phone {
+    font-size: 11px;
+    color: black;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    
+    @media(max-width: $screen-sm) {
+      position: absolute;
+      margin: 0px;
+      top: 33px;
+      right: 90px;
+      font-size: 9px;
+    }
+    @media(min-width: $screen-sm) {
+      margin-left: 20px;
+    }
+    
+    @media(min-width: 1300px){
+      display: none;
+    }
+
+    &:hover, &:focus {
+      color: black;
+    }
+
+    .icon {
+      margin-right: 13px;
+      fill: #205ad0;
+
+      @media(max-width: $screen-sm) {
+        display: none;
+      }
+    }
+  }
+
   &-nav {
 
     @include media-breakpoint-up(xl) {}

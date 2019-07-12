@@ -6031,6 +6031,8 @@ select.selectpicker {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+.page__inner--ad {
+      padding-bottom: 140px; }
 .page__content {
     z-index: 2;
     -webkit-box-flex: 1;
@@ -6125,62 +6127,62 @@ a:hover, a:focus, .link:hover, .link:focus {
 .icon {
   display: inline-block; }
 .icon-logo {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: 0px 0px;
     width: 120px;
     height: 34px; }
 .icon-logo.active, .page-header--white .icon-logo, .fp-viewing-page-service .page-header .icon-logo, .fp-viewing-page-buy .page-header .icon-logo, .fp-viewing-page-whyWe .page-header .icon-logo, .fp-viewing-page-news .page-header .icon-logo, .fp-viewing-page-contacts .page-header .icon-logo, .page-header--white .icon-logo.dropdown-main__toggle:after, .fp-viewing-page-service .page-header .icon-logo.dropdown-main__toggle:after, .fp-viewing-page-buy .page-header .icon-logo.dropdown-main__toggle:after, .fp-viewing-page-whyWe .page-header .icon-logo.dropdown-main__toggle:after, .fp-viewing-page-news .page-header .icon-logo.dropdown-main__toggle:after, .fp-viewing-page-contacts .page-header .icon-logo.dropdown-main__toggle:after, .page-header--transparent .page-header__info .icon-logo.icon-email, .fp-viewing-page-about .page-header .page-header__info .icon-logo.icon-email, .fp-viewing-page-attend .page-header .page-header__info .icon-logo.icon-email, .nav-menu li.active a.icon-logo, .nav-menu--light li.active a.icon-logo {
-      background-image: url(../img/sprite-07064371946908459.png);
+      background-image: url(../img/sprite-011087547712900814.png);
       background-position: 0px -38px;
       width: 120px;
       height: 34px; }
 .icon-email {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -88px -76px;
     width: 16px;
     height: 13px; }
 .icon-email.active, .page-header--white .icon-email.icon-logo, .fp-viewing-page-service .page-header .icon-email.icon-logo, .fp-viewing-page-buy .page-header .icon-email.icon-logo, .fp-viewing-page-whyWe .page-header .icon-email.icon-logo, .fp-viewing-page-news .page-header .icon-email.icon-logo, .fp-viewing-page-contacts .page-header .icon-email.icon-logo, .page-header--white .icon-email.dropdown-main__toggle:after, .fp-viewing-page-service .page-header .icon-email.dropdown-main__toggle:after, .fp-viewing-page-buy .page-header .icon-email.dropdown-main__toggle:after, .fp-viewing-page-whyWe .page-header .icon-email.dropdown-main__toggle:after, .fp-viewing-page-news .page-header .icon-email.dropdown-main__toggle:after, .fp-viewing-page-contacts .page-header .icon-email.dropdown-main__toggle:after, .page-header--transparent .page-header__info .icon-email, .fp-viewing-page-about .page-header .page-header__info .icon-email, .fp-viewing-page-attend .page-header .page-header__info .icon-email, .nav-menu li.active a.icon-email, .nav-menu--light li.active a.icon-email {
-      background-image: url(../img/sprite-07064371946908459.png);
+      background-image: url(../img/sprite-011087547712900814.png);
       background-position: -68px -76px;
       width: 16px;
       height: 13px; }
 .icon-location {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -108px -76px;
     width: 10px;
     height: 13px; }
 .icon-phone {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: 0px -102px;
     width: 13px;
     height: 13px; }
 .icon-dropdown {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -17px -102px;
     width: 10px;
     height: 5px; }
 .icon-dropdown.active, .page-header--white .icon-dropdown.icon-logo, .fp-viewing-page-service .page-header .icon-dropdown.icon-logo, .fp-viewing-page-buy .page-header .icon-dropdown.icon-logo, .fp-viewing-page-whyWe .page-header .icon-dropdown.icon-logo, .fp-viewing-page-news .page-header .icon-dropdown.icon-logo, .fp-viewing-page-contacts .page-header .icon-dropdown.icon-logo, .page-header--white .icon-dropdown.dropdown-main__toggle:after, .fp-viewing-page-service .page-header .icon-dropdown.dropdown-main__toggle:after, .fp-viewing-page-buy .page-header .icon-dropdown.dropdown-main__toggle:after, .fp-viewing-page-whyWe .page-header .icon-dropdown.dropdown-main__toggle:after, .fp-viewing-page-news .page-header .icon-dropdown.dropdown-main__toggle:after, .fp-viewing-page-contacts .page-header .icon-dropdown.dropdown-main__toggle:after, .page-header--transparent .page-header__info .icon-dropdown.icon-email, .fp-viewing-page-about .page-header .page-header__info .icon-dropdown.icon-email, .fp-viewing-page-attend .page-header .page-header__info .icon-dropdown.icon-email, .nav-menu li.active a.icon-dropdown, .nav-menu--light li.active a.icon-dropdown {
-      background-image: url(../img/sprite-07064371946908459.png);
+      background-image: url(../img/sprite-011087547712900814.png);
       background-position: -31px -102px;
       width: 10px;
       height: 5px; }
 .icon-play {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: 0px -76px;
     width: 21px;
     height: 22px; }
 .icon-fb {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -124px 0px;
     width: 8px;
     height: 15px; }
 .icon-vk {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -25px -76px;
     width: 20px;
     height: 15px; }
 .icon-instagram {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -49px -76px;
     width: 15px;
     height: 15px; }
@@ -6312,9 +6314,9 @@ button {
             justify-content: center; }
 .page-header .navbar {
     padding: 16px 8px 7px 15px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 .page-header__toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6354,7 +6356,7 @@ button {
 .page-header--white .page-header__toggle, .fp-viewing-page-service .page-header .page-header__toggle, .fp-viewing-page-buy .page-header .page-header__toggle, .fp-viewing-page-whyWe .page-header .page-header__toggle, .fp-viewing-page-news .page-header .page-header__toggle, .fp-viewing-page-contacts .page-header .page-header__toggle {
       color: black; }
 .page-header--white .dropdown-main__toggle:after, .fp-viewing-page-service .page-header .dropdown-main__toggle:after, .fp-viewing-page-buy .page-header .dropdown-main__toggle:after, .fp-viewing-page-whyWe .page-header .dropdown-main__toggle:after, .fp-viewing-page-news .page-header .dropdown-main__toggle:after, .fp-viewing-page-contacts .page-header .dropdown-main__toggle:after {
-      background-image: url(../img/sprite-07064371946908459.png);
+      background-image: url(../img/sprite-011087547712900814.png);
       background-position: -31px -102px;
       width: 10px;
       height: 5px; }
@@ -6364,8 +6366,10 @@ button {
       color: white; }
 .page-header--transparent .page-header__info .icon, .fp-viewing-page-about .page-header .page-header__info .icon, .fp-viewing-page-attend .page-header .page-header__info .icon {
       fill: white; }
+.page-header--transparent .navbar__phone, .fp-viewing-page-about .page-header .navbar__phone, .fp-viewing-page-attend .page-header .navbar__phone {
+      color: white; }
 .page-footer {
-  padding: 30px 0px 190px 0px;
+  padding: 30px 0px 50px 0px;
   color: black; }
 .page-footer__inner {
     display: -webkit-box;
@@ -6407,6 +6411,12 @@ button {
     -ms-flex-item-align: center;
         align-self: center;
     margin-top: 30px; }
+.page-footer__tel {
+    color: black !important;
+    text-decoration: none !important; }
+.page-footer__tel:hover, .page-footer__tel:focus {
+      color: black;
+      text-decoration: none; }
 .page-footer .btn {
     text-transform: uppercase; }
 .form-control {
@@ -6465,6 +6475,16 @@ textarea.form-control {
 .navbar-brand {
     margin-right: 13px;
     padding-top: 9px; }
+.navbar__phone {
+    font-size: 11px;
+    color: black;
+    letter-spacing: 0.4px;
+    text-decoration: none; }
+.navbar__phone:hover, .navbar__phone:focus {
+      color: black; }
+.navbar__phone .icon {
+      margin-right: 13px;
+      fill: #205ad0; }
 .navbar-collapse {
     padding-top: 4px; }
 .navbar-collapse > * {
@@ -6497,7 +6517,7 @@ textarea.form-control {
   padding: 0;
   letter-spacing: 0.4px; }
 .dropdown-main__toggle:after {
-    background-image: url(../img/sprite-07064371946908459.png);
+    background-image: url(../img/sprite-011087547712900814.png);
     background-position: -17px -102px;
     width: 10px;
     height: 5px;
@@ -8284,6 +8304,8 @@ textarea.form-control {
     text-align: center !important; }
         .section__content:before {
           width: 424px; }
+      .navbar__phone {
+        margin-left: 20px; }
     .card-step {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9850,6 +9872,8 @@ textarea.form-control {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+      .navbar__phone {
+        display: none; }
       .info-promo__num {
         font-size: 36px;
         line-height: 30px; }
@@ -10485,7 +10509,7 @@ textarea.form-control {
       padding-left: 300px; }
     .page-footer {
       padding-top: 53px;
-      padding-bottom: 190px; }
+      padding-bottom: 50px; }
       .navbar-expand-lg .navbar-collapse {
         display: -webkit-box !important;
         display: -ms-flexbox !important;
@@ -11308,10 +11332,16 @@ textarea.form-control {
     .info-promo {
       padding-left: 0; } }
 @media (max-width: 576px) {
+      .navbar__phone {
+        position: absolute;
+        margin: 0px;
+        top: 33px;
+        right: 90px;
+        font-size: 9px; }
+        .navbar__phone .icon {
+          display: none; }
     .card-step .card-body {
-      padding-left: 0; }
-    .article__schema__body {
-      display: none; } }
+      padding-left: 0; } }
 @media (max-width: 1400px) {
         .modal-full .modal-dialog {
           max-width: 100%; } }

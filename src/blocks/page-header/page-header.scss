@@ -61,7 +61,8 @@
 
   .navbar {
     padding: 16px 8px 7px 15px;
-    align-items: start;
+    // align-items: start;
+    align-items: center;
   }
 
   &__toggle {
@@ -175,6 +176,10 @@
           }
         }
       }
+    }
+
+    .navbar__phone {
+      color: white;
     }
 
     .dropdown-main {
